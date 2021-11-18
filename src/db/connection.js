@@ -5,6 +5,7 @@ const sequelize = new Sequelize(process.env.MYSQL_URI);
 
 try {
   sequelize.authenticate();
+  console.log("Successfully connected");
 } catch (error) {
   console.log(error);
 }
